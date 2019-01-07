@@ -5,8 +5,7 @@ class App < Sinatra::Base
 
   get '/reversename/:name' do
     params[:name].each do |char|
-      params[:name].unshift(char)
-      "#{params[:name]}"
+      "#{params[:name].unshift(char)}
     end
   end
 
