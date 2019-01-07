@@ -12,6 +12,7 @@ class App < Sinatra::Base
      params[:name] = params[:name][i] + params[:name]
      i += 1
      break
+     "#{params[:name]"
    end
   end
 
