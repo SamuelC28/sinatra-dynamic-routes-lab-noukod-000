@@ -4,7 +4,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/reversename/:name' do
-    params[:name].each do |char|
+   name.each do |char|
       "#{params[:name].unshift(char)}"
     end
   end
