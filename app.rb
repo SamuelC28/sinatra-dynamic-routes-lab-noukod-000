@@ -7,10 +7,11 @@ class App < Sinatra::Base
     # params[:name].each do |char|
     #   "#{params[:name].unshift(char)}"
     # end
-    i = 0 
-   while i < params[:name].length 
+    i = 0
+   while i < params[:name].length
      params[:name] = params[:name][i] + params[:name]
-     i += 1 
+     i += 1
+     break
    end
   end
 
