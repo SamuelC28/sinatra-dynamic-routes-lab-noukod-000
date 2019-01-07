@@ -4,9 +4,14 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/reversename/:name' do
-   name.each do |char|
-      "#{params[:name].unshift(char)}"
-    end
+    # params[:name].each do |char|
+    #   "#{params[:name].unshift(char)}"
+    # end
+    i = 0 
+   while i < params[:name].length 
+     params[:name] = params[:name][i] + params[:name]
+     i += 1 
+   end
   end
 
   get '/square/:number' do
