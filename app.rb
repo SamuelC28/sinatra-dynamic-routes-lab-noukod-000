@@ -11,8 +11,9 @@ class App < Sinatra::Base
    while i < params[:name].length
      params[:name] = params[:name][i] + params[:name]
      i += 1
+    " #{params[:name]"
      break
-     "#{params[:name]"
+
    end
   end
 
