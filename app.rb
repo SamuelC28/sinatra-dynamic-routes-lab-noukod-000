@@ -6,15 +6,6 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     # params[:name].each do |char|
      "#{params[:name].reverse}"
-    # end
-    i = 0
-   while i < params[:name].length
-     params[:name] = params[:name][i] + params[:name]
-     i += 1
-    "#{params[:name]"
-     break
-
-   end
   end
 
   get '/square/:number' do
